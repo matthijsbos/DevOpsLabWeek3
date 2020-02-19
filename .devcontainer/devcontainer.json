@@ -13,7 +13,8 @@
 	"extensions": [],
 
 	"mounts": [
-		"source=${localEnv:HOME}${localEnv:USERPROFILE}\\.aws,target=/root/.aws,type=bind,consistency=cached"
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}\\.aws,target=/root/.aws,type=bind,consistency=cached",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}\\.ssh,target=/root/.ssh,type=bind,consistency=cached"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
