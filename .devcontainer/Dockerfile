@@ -11,7 +11,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-ubuntu-18.04
 #
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
-   && apt-get -y install --no-install-recommends awscli less \
+   && apt-get -y install --no-install-recommends awscli less groff \
    #
    # Clean up
    && apt-get autoremove -y \
